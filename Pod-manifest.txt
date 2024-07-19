@@ -1,0 +1,16 @@
+
+******Write Pod manifest.yml file******
+---
+apiVersion: V1
+kind: Pod
+metadata: 
+ name: expopods
+ labels:
+ app: expoapplication
+spec:
+ containers:
+ - name: expocontaines
+ image: prafuldhote/nginx
+ ports: 
+ - containerPort: 8080
+...
